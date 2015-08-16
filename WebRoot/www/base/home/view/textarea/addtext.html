@@ -1,0 +1,103 @@
+<div class="scrollable">
+	<div class="scrollable-header">
+	    <header-drective titleddd="已办任务详情" returntstate="main.havedo"></header-drective>
+	</div>
+	<div class="scrollable-content" style="height:100%;">
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+		        <h3 class="panel-title">流程信息</h3>
+		    </div>
+		    <div class="panel-body">
+		    	<form>
+		    		 <div class="form-group">
+					 	  <div class="input-group">
+						      <div class="input-group-addon">流程编号</div>
+						      <textarea class="form-control" rows="1" cols="30" ng-model="work.WorkCode" readonly="readonly" ></textarea>
+						     <!--  <input type="text" class="form-control" disabled ng-model="work.WorkCode"> -->
+						   </div>
+					  </div>
+					  <div class="form-group">
+						 <div class="input-group">
+						      <div class="input-group-addon">流程名称</div>
+						       <adaptive-textarea modelvalue="{{work.WorkName}}"  readonly="true"></adaptive-textarea>
+						     <!--  <textarea class="form-control" rows="1" cols="30" id="workName" ng-model="work.WorkName" readonly="readonly" ></textarea> -->
+						     <!--  <input type="text" class="form-control" disabled ng-model="work.WorkName"> -->
+						  </div>
+					  </div>
+					   <div class="form-group">
+						 <div class="input-group">
+						      <div class="input-group-addon">表单名称</div>
+						      <textarea class="form-control" rows="1" cols="30" ng-model="work.FormName" readonly="readonly"></textarea>
+						      <!-- <input type="text" class="form-control" disabled ng-model="work.FormName"> -->
+						  </div>
+					  </div>
+					  <div class="form-group">
+					 	  <div class="input-group">
+						      <div class="input-group-addon">发&nbsp;&nbsp;起&nbsp;&nbsp;人</div>
+						      <textarea class="form-control" rows="1" cols="30" ng-model="work.UserName" readonly="readonly"></textarea>
+						      <!-- <input type="text" class="form-control" disabled ng-model="work.UserName"> -->
+						    </div>
+					  </div>
+					   <div class="form-group">
+					 	  <div class="input-group">
+						      <div class="input-group-addon">发起时间</div>
+						      <textarea class="form-control" rows="1" cols="30" ng-model="work.TimeStr" readonly="readonly"></textarea>
+						      <!-- <input type="text" class="form-control" disabled ng-model="work.TimeStr"> -->
+						    </div>
+					  </div>
+					  
+					  <div class="cancelPaddingAndMagging" style="height: 0px">
+				 	  	  <div class="row cancelPaddingAndMagging" style="float: left;">
+					      	<label  class="col-sm-12 col-xs-12 cancelPaddingAndMagging" >附件</label>
+					 	  	  <div class="row">
+							    <preview-drective files="files"></preview-drective>
+					 	  	  </div>
+					      </div>
+					  </div>
+					  
+				</form>
+		    </div>
+		</div>
+		
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+		        <h3 class="panel-title">审批历史</h3>
+		    </div>
+		    <div class="panel-body">
+		    	<div ng-repeat="history in work.ShenPiHistory">
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">办&nbsp;&nbsp;理&nbsp;&nbsp;人</div>
+							<textarea class="form-control" rows="1" cols="30" ng-model="history.BanLiRen" readonly="readonly"></textarea>
+							<!-- <input type="text" class="form-control" disabled
+								ng-model="history.BanLiRen"> -->
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="input-group">
+							<div class="input-group-addon">办理时间</div>
+							<textarea class="form-control" rows="1" cols="30" ng-model="history.BanLiTime" readonly="readonly"></textarea>
+							<!-- <input type="text" class="form-control" disabled
+								ng-model="history.BanLiTime"> -->
+						</div>
+					</div>
+					<div class="form-group" style="margin-bottom: 10px;">
+						<div class="input-group">
+							<div class="input-group-addon">办理意见</div>
+							<textarea class="form-control" rows="2" cols="30" ng-model="history.BanLiYiJian" readonly="readonly"></textarea>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+		
+		<div class="panel panel-default">
+		    <div class="panel-heading">
+		        <h3 class="panel-title">表单内容</h3>
+		    </div>
+		    <div class="panel-body">
+		    	<task-form task-forms="work.FormContent"></task-form>
+		    </div>
+		</div>
+	</div>
+</div>

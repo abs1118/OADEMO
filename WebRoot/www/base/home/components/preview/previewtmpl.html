@@ -1,0 +1,13 @@
+<div>
+	<div class="scrollable-content">
+		<div class="container-fluid">
+			<div class="notices-container">
+				<div ng-repeat="file in files"
+					class="section section-break" ng-click="detailFile(file)">
+					<i class="fa fa-envelope"></i> {{file.OldName}}
+				</div>
+			</div>
+		</div>
+		<br />
+	</div>
+</div>

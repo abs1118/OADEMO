@@ -1,0 +1,11 @@
+ <div class="scrollable-content" style="height:100%" ui-scroll-top="load()">
+ 
+  	<div class="list-group">
+  		<div ng-transclude></div>
+  		<div list-group-item ng-click="loadMoreData()" class="{{myClass}}">
+  			<div class="pullDown">
+  				<span class="pullDownIcon"></span><span class="pullDownLabel">{{loadMoreLabel}}</span>
+  			</div>
+  		</div>
+	</div>
+</div>

@@ -1,0 +1,37 @@
+<div>
+	<div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+		<h4><strong>{{titleddd}}</strong></h4>
+	</div>
+	
+	<div class="btn-group pull-left">
+		<div class="btn sidebar-toggle" style="padding-left: 0">
+			<span class="title-left"><a ng-click="returnStateClick()"
+				class="btn"><span class="returnBtn"><span class="glyphicon glyphicon-chevron-left icon-white"></span class="textFont">返回</span></a> </span>
+		</div>
+	</div>
+	
+	<div ng-show="menu.show" class="btn-group pull-right">
+		<a ui-turn-on='myDropdown' class='btn'>
+			<span class="returnBtn">
+				<span class="glyphicon glyphicon-align-justify menu"></span> 
+			</span>
+		</a>
+		<ul class="dropdown-menu cancelPaddingAndMagging" ui-outer-click="Ui.turnOff('myDropdown')"
+			ui-outer-click-if="Ui.active('myDropdown')" role="menu"
+			ui-show="myDropdown" ui-state="myDropdown" ui-turn-off="myDropdown">
+			<li ng-repeat="oprator in operators" style="height: 50px;border-bottom: solid 1px grey;" class="cancelPaddingAndMagging">
+			   <a ng-click="opratorClick($index)">
+			      <span  class="{{oprator.class}}" style=" margin:-2px 0px -6px 3px; "></span>
+			      <span style="  margin-left: 11px;">{{oprator.name}}</span>
+			   </a>
+			</li>
+		</ul>
+	</div>
+	
+	<div ng-show="searchIconShow" class="btn-group pull-right">
+		<a ng-click="searchShow()">
+		<span class='searchIcon'>
+			</span>
+		</a>
+	</div>
+</div>

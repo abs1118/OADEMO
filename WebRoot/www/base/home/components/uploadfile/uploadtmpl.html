@@ -1,0 +1,33 @@
+<div>
+	<div class="row">
+		<!--<a href="javascript:;" class="file">选择文件
+    		<input type="file" name="file" ng-file-select="onFileSelect($files)" required>
+		</a>-->
+		
+		<div class="box" style="  padding-left: 10px;">
+			<a href="javascript:void(0);" class="link">上传附件</a> 
+			<input type="file" name="file" class="uploadFile" ng-file-select="onFileSelect($files)">
+			
+		</div>
+	</div>
+	<div class="row" ng-show="hasFile">
+		<div class="scrollable-content">
+			<div class="container-fluid">
+				<div class="notices-container">
+					<div ng-repeat="file in files"
+						drag-to-dismiss="removeFile(file)"
+						class="section section-break">
+						<i class="fa fa-envelope"></i> {{file.name}}
+					</div>
+				</div>
+			</div>
+			<br />
+		</div>
+			
+			<!-- <li ng-repeat="file in files" style="border-bottom: solid grey 1px;">
+				<div>
+					<font>{{file.name}}</font> <span class="glyphicon glyphicon-remove"
+						ng-click="removeFile(file)"></span>
+				</div></li> -->
+	</div>
+</div>

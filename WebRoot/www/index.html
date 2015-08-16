@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OADEMO</title>
+    <link rel="stylesheet" href="base/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="base/css/mobile-angular-ui/mobile-angular-ui-base.css" />
+    <link rel="stylesheet" href="base/css/mobile-angular-ui/mobile-angular-ui-desktop.css" />
+    <link rel="stylesheet" href="base/css/mobile-angular-ui/mobile-angular-ui-hover.css" />
+    <link rel="stylesheet" href="base/css/mobile-angular-ui/mobile-angular-ui-migrate.css" />
+    <link rel="stylesheet" href="base/css/ngDialog/ngDialog.css" >
+    <link rel="stylesheet" href="base/css/ngDialog/ngDialog-custom-width.css" >
+    <link rel="stylesheet" href="base/css/ngDialog/ngDialog-theme-default.css" >
+    <link rel="stylesheet" href="base/css/ngDialog/ngDialog-theme-plain.css" >
+    <link rel="stylesheet" href="base/css/app.css">
+    <script>
+    	window.prompt  = function(){return ;};
+    </script>
+    <script src='base/js/cordova.js'></script>
+    <script data-main="base/home/js/main.js" src="base/js/requirejs/require.js"></script>
+    <script type="text/javascript" src="base/js/angular/angular.js"></script>
+    <script type="text/javascript" src="base/js/preview.js"></script>
+    <script type="text/javascript" src="base/js/HardwareListener.js"></script>
+    <script src="base/js/angular/ng-file-upload-shim.js"></script>
+    </head>
+    <body >
+	    <div ng-show="loading" class="app-content-loading">
+	          <i class="fa fa-spinner fa-spin loading-spinner"></i>
+	    </div>
+	    <div class="app-content" ng-class="{loading: loading}" >
+	          <ui-view></ui-view>
+	    </div>
+  	</body>
+</html>

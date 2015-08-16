@@ -1,0 +1,40 @@
+<div class="modal open"  ui-if='loginModal' ui-state='loginModal' ng-controller="setUrlCtrl" >
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="loginModal">&times;</button>
+        <h5 class="modal-title">地址</h5>
+      </div>
+      <div class="modal-body" style="height:150px;" >
+      <div class="row">
+	   <div class="form-group" class="col-sm-12 col-xs-12">
+	      <label for="lastname" class="col-sm-3 col-xs-3 control-label cancelPaddingAndMagging fontStyle">登录地址:</label>
+	      <div class="col-sm-9 col-xs-9">
+	         <input type="text" class="col-sm-9 col-xs-9 form-control input-lg" ng-model="serviceURL" placeholder="请输入地址"
+	            >
+	      </div>
+	   </div>
+      </div>
+      <div class="row">
+	   <div class="form-group" class="col-sm-12 col-xs-12">
+	      <label for="lastname" class="col-sm-3 col-xs-3 control-label cancelPaddingAndMagging fontStyle">附件地址:</label>
+	      <div class="col-sm-9 col-xs-9">
+	         <input type="text" class="col-sm-9 col-xs-9 form-control input-lg" ng-model="attachmentURL" placeholder="请输入附件地址"
+	            >
+	      </div>
+	   </div>
+      </div>
+      </div>
+      <div class="modal-footer">
+         
+         <button  class="btn btn-primary" ui-turn-off="loginModal" ng-click="saveUrl()">确认</button>
+         <button ui-turn-off="loginModal" class="btn btn-primary">取消</button>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+

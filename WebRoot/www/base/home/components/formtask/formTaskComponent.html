@@ -1,0 +1,9 @@
+<div>
+	<form>
+	  <div class="form-group" ng-repeat="taskForm in taskForms">
+	    <label>{{taskForm.name}}</label>
+	    <textarea class="form-control" rows="1" cols="30" ng-model="taskForm.value" readonly="readonly"></textarea>
+	    <!-- <input type="text" class="form-control" disabled ng-model="taskForm.value"> -->
+	  </div>
+	</form>
+</div>

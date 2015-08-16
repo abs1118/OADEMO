@@ -1,0 +1,51 @@
+<div class="scrollable" >
+<header-drective titleddd='demo' returntstate="main" search-show-or-hide='true' search-is-show="searchIsShow" operators="operators" ></header-drective>
+  <div class="scrollable-content" id="content">
+       <div ui-state="searchBar" >
+		  <input 
+		  ng-show="searchIsShow"
+		  ng-model="query"
+		 
+		  class="form-control"
+		
+		  placeholder="Search.." />
+	  </div>
+	  <div ng-show="demoLoading" class="app-content-loading">
+		<i class="fa fa-spinner fa-spin loading-spinner"></i>
+	  </div>
+	<scroll>
+	  <div  ui-scroll-bottom='bottomReached()'>
+	    <div class="list-group">
+	     <scroll-component load-more-data="loadMoreData()" load-more-label="{{loadMoreLabel}}" my-class="{{myClass}}">
+		     <div  ng-repeat="demo in demos| filter:query" on-finish-render-filters>
+		       <a class="list-group-item media" ng-click="itemClick(demo,'main.demo.demoDetail')">
+	              <div>
+		            <div class="col-sm-12 col-xs-11">
+		              <div style="margin-left: -26px;">
+			              <div class="pull-left">
+                              <i class="fa fa-user chat-user-avatar"></i>
+                          </div>
+			               <div class="media-body">
+			                  <h5 class="media-heading">{{demo.name}}</h5>
+			                  <small>
+			                      <span>
+			                          <span class="label label-info">{{demo.country}}</span>
+			                      </span>
+			                  </small>
+	                       </div>
+		              </div>
+		          </div>
+		           <i style="line-height:44px;" class="fa fa-chevron-right pull-right"></i>
+		        </div>
+             </a>
+          </div>
+          </scroll-component>
+        </div>
+	 </div>
+	 </scroll>
+ </div>
+ </div>
+
+
+
+

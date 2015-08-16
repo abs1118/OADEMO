@@ -1,0 +1,36 @@
+.content{
+	background: url("../image/login.jpg") no-repeat;
+	height: 100%;
+	padding-top: 55%;
+}
+
+.fontStyle{
+	font-size:16px;
+	text-align: right;
+	color: gray;
+}
+.open {
+	 margin-top: 25%;
+}
+.page-header1{
+	text-align: center;
+	margin-top: -90px;
+    margin-bottom: 60px;
+}
+
+h1{
+
+	font-family: Arial, sans-serif;
+
+    font-size: -webkit-xxx-large;
+
+    color: #369;
+    font-weight: bold;
+}
+
+.label {
+	color:#9EA6A9;
+}
+.label .label-info{
+	color:#9EA6A9;
+}

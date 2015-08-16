@@ -1,0 +1,86 @@
+[{
+"name" : "Alfreds Futterkiste",
+"id" : "Berlin",
+"country" : "Germany"
+},
+{
+"name" : "Berglunds snabbköp",
+"id" : "Luleå",
+"country" : "Sweden"
+},
+{
+"name" : "Centro comercial Moctezuma",
+"id" : "México D.F.",
+"country" : "Mexico"
+},
+{
+"name" : "Ernst Handel",
+"id" : "Graz",
+"country" : "Austria"
+},
+{
+"name" : "FISSA Fabrica Inter. Salchichas S.A.",
+"id" : "Madrid",
+"country" : "Spain"
+},
+{
+"name" : "Galería del gastrónomo",
+"id" : "Barcelona",
+"country" : "Spain"
+},
+{
+"name" : "Island Trading",
+"id" : "Cowes",
+"country" : "UK"
+},
+{
+"name" : "Königlich Essen",
+"id" : "Brandenburg",
+"country" : "Germany"
+},
+{
+"name" : "Laughing Bacchus Wine Cellars",
+"id" : "Vancouver",
+"country" : "Canada"
+},
+{
+"name" : "Magazzini Alimentari Riuniti",
+"id" : "Bergamo",
+"country" : "Italy"
+},
+{
+"name" : "North/South",
+"id" : "London",
+"country" : "UK"
+},
+{
+"name" : "Paris spécialités",
+"id" : "Paris",
+"country" : "France"
+},
+{
+"name" : "Rattlesnake Canyon Grocery",
+"id" : "Albuquerque",
+"country" : "USA"
+},
+{
+"name" : "Simons bistro",
+"id" : "København",
+"country" : "Denmark"
+},
+{
+"name" : "The Big Cheese",
+"id" : "Portland",
+"country" : "USA"
+},
+{
+"name" : "Vaffeljernet",
+"id" : "Århus",
+"country" : "Denmark"
+},
+{
+"name" : "Wolski Zajazd",
+"id" : "Warszawa",
+"country" : "Poland"
+}
+]

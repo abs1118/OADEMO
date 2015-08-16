@@ -1,0 +1,19 @@
+
+<div class="navbar navbar-app navbar-absolute-bottom">
+	<div class="btn-group justified">
+		<a href="" class="btn btn-navbar" ng-click="onLoginout()"><i
+			class="fa fa-github fa-navbar title-buttom">注销</i> </a> <a href="#/main"
+			class="btn btn-navbar"><i
+			class="fa fa-home fa-navbar title-buttom">首页</i> </a> <a 
+			class="btn btn-navbar" ng-click="onExitKeyDown()"><i
+			class="fa fa-exclamation-circle fa-navbar title-buttom">退出</i> </a>
+	</div>
+</div>
+
+<!-- App Body -->
+<div class="app-body" ng-class="{loading: loading}">
+	<div ng-show="loading" class="app-content-loading">
+		<i class="fa fa-spinner fa-spin loading-spinner"></i>
+	</div>
+	<div ui-view="body" class="app-content bg-info "></div>
+</div>

@@ -1,0 +1,104 @@
+@IMPORT url("../home/view/login/css/login.css");
+@IMPORT url("../home/view/login/css/checkbox.css");
+/* @IMPORT url("../home/css/scrollTemplate.css"); */
+@IMPORT url("../home/view/main/css/functionList.css");
+@IMPORT url("iscroll/iscroll.css");
+
+.cancelPaddingAndMagging {
+	padding: 0;
+	margin: 0;
+}
+
+.returnBtn {
+	color: white;
+}
+
+.menu {
+	padding-top: 50%;
+}
+.progress {
+	display: inline-block;
+	width: 100px;	
+	border: 3px groove #CCC;
+}
+.progress div {
+	font-size: smaller;
+	background: orange;
+	width: 0;
+}
+
+.textFont {
+	font-size: 18px;
+}
+
+.lableText {
+	
+}
+
+.glyphicon-folder-close:before {
+	content: url("../image/folder.png");
+}
+
+.glyphicon-list-alt:before {
+	content: url("../image/file.jpg");
+}
+
+.box {
+	position: relative;
+	float: left;
+}
+
+input.uploadFile {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	opacity: 0;
+	filter: alpha(opacity = 0);
+	cursor: pointer;
+	width: 276px;
+	height: 36px;
+	overflow: hidden;
+}
+
+a.link {
+	float: left;
+	display: inline-block;
+	padding: 4px 16px;
+	color: #fff;
+	font: 14px "Microsoft YaHei", Verdana, Geneva, sans-serif;
+	cursor: pointer;
+	background-color: #0099ff;
+	line-height: 28px;
+	text-decoration: none;
+}
+
+.searchIcon{
+	content: url("../image/search3.png");
+	margin-top: 11px;
+    margin-right: 3px;
+}
+
+input[ng-show='searchIsShow']
+{
+	height: 55px;
+}
+
+.menuAddIcon{
+	content: url("../image/Add1.png");
+}
+
+.menuDelIcon{
+	content: url("../image/Del1.png");
+}
+
+.menuEditIcon{
+	content: url("../image/edit1.png");
+}
+
+.menuSendIcon{
+	content: url("../image/send.png");
+}
+
+.menuReIcon{
+	content: url("../image/re.png");
+}

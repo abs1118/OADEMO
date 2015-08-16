@@ -1,0 +1,47 @@
+ <div class="col-sm-3 col-xs-3">
+       <a href="" ui-turn-on="DeptAndUserModal1" ng-click="getData()" >
+        <image style="width:46px;height:46px" src="image/toUser.png" >
+         </image>
+        </a>
+</div>
+
+<div class="modal" ui-if='DeptAndUserModal1' ui-state='DeptAndUserModal1' style="z-index: 9999;position: absolute">
+  <div class="modal-backdrop in"></div>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button class="close" 
+                ui-turn-off="DeptAndUserModal1">&times;</button>
+        <h5 class="modal-title">组织机构和用户</h5>
+      </div>
+      <div class="modal-body" >
+       <div class="scrollable">
+ 
+		  <div class="scrollable-content">
+		    <div class="list-group">
+		     <div ng-repeat="deptOrUser in deptAndUsers ">
+		      <div  style="float: left;width:84%" ng-click="getNextData(deptOrUser)" class="list-group-item">
+		        {{ deptOrUser.name}} <i class="fa fa-chevron-right pull-right"></i>
+		      </div>
+		      <div class="cancelPaddingAndMagging" style="float: left; border-bottom:#DDDDDD solid 1px;background-color:#007AFF; height: 41px;width: 15%;padding: 4px 4px 6px 13px;">
+		          <input class="cancelPaddingAndMagging" type="checkbox" ng-model="deptOrUser.checked" ng-click="chkDeptOrUser(deptOrUser)"  style=" width: 19px;
+						 height: 22px;
+						 width:22px;
+						 padding: 0 5px 0 0;
+						 display: block;
+						 clear: left;
+						 float: left;">
+		       </div>
+		      </div>
+		    </div>
+		  </div>
+       </div>
+      </div>
+      <div class="modal-footer modal-content" style="z-index: 9999;">
+         <button  class="btn btn-primary" ng-click="goPrePage(user)">返回</button>
+         <button  class="btn btn-primary" ui-turn-off="DeptAndUserModal1" ng-click="save()">确认</button>
+         <button ui-turn-off="DeptAndUserModal1" class="btn btn-primary">取消</button>
+      </div>
+    </div>
+  </div>
+</div>

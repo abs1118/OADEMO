@@ -1,0 +1,303 @@
+<div class="scrollable">
+	<header-drective titleddd='添加人员' returntstate="main.addressbook.personaladdressbook" operators="operators"> </header-drective>
+	<div class="scrollable-content section">
+	<div class="list-group">
+		
+		<form class="form-inline" role="form">
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">所属类别</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.TypeStr">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">分组</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+					    <datetime-picker datetime='demo.time'></datetime-picker>
+						<input type="text" class="form-control input-lg"
+							ng-model="demo.time">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">是否共享</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+					    <select class="form-control input-lg" ng-model="newPersonaladdress.IfShare">
+								<option>是</option>
+								<option >否</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">姓名</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.NameStr">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">性别</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-10 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.Sex">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">生日</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+					     <input type="text" class="Wdate" time-format='yyyy-MM-dd HH:mm:ss'  ng-model="birthDay"  datetime-picker  readOnly>
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">昵称</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.NiCheng">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">职务</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.ZhiWu">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">配偶</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.PeiOu">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">子女</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.ZiNv">
+					</div>
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">单位名称</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.DanWeiMingCheng">
+					</div>
+				</div>
+			</div>
+
+            <div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">单位地址</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.DanWeiDiZhi">
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">单位邮编</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.DanWeiYouBian">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">单位电话</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.DanWieDianHua">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">单位传真</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.DanWeiChuanZhen">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">家庭住址</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.JiaTingZhuZhi">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">家庭邮编</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.JiaTingYouBian">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">家庭电话</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.JiaTingDianHua">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">手机</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.ShouJi">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">小灵通</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.XiaoLingTong">
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">电子邮件</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.Email">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">QQ号码</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.QQ">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">MSN</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<input type="text" class="form-control input-lg"
+							ng-model="newPersonaladdress.Msn">
+					</div>
+				</div>
+			</div>
+			
+			<div class="form-group">
+				<div class="row">
+					<label class="col-sm-12 col-xs-12 control-label">备注</label>
+				</div>
+				<div class="row">
+					<div class="col-sm-12 col-xs-12">
+						<textarea rows="5" class="form-control input-lg" ng-model="newPersonaladdress.BackInfo"
+	           			 placeholder="请输入内容">
+	          			</textarea>
+					</div>
+				</div>
+			</div>
+			
+		</form>
+	</div>
+	</div>
+	<button  class="btn btn-block btn-lg btn-primary scrollable-footer" ng-click="save()">提交</button>
+</div>

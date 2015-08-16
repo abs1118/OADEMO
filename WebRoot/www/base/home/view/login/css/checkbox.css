@@ -1,0 +1,51 @@
+
+.textSite{
+  position: absolute;
+  margin-top: -37px;
+  margin-left: 25px;
+  font-size: large;
+  font-family: '黑体';
+  }
+
+div[ng-show="allCheckBox.show"]{
+  margin-left: -8px;
+  margin-top: 10px;
+  line-height: 40px;
+  font-family: "黑体";
+  font-size: 'large';
+  
+}
+
+input[ng-show="itemCheckBox.show"]{
+	margin-left: -23px;
+}
+
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  background: #fff url(../image/checkbox.png);
+  height: 22px;
+  vertical-align: middle;
+  width: 22px;
+  background-position: -8px -5px;
+}
+input[type="checkbox"]:checked {
+  background-position: -55px -5px;
+}
+input[type="checkbox"]:focus,
+input[type="checkbox"]:hover {
+  background-position: -8px -5px;
+  outline: none;
+}
+
+input[type="checkbox"]:checked {
+  background-position: -56px -5px;
+}
+
+input[type="checkbox"][disabled] {
+  background-position: -72px -5px;
+}
+
+input[type="checkbox"][disabled]:checked {
+  background-position: -96px 0;
+}

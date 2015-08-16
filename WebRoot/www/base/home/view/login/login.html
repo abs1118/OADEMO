@@ -1,0 +1,65 @@
+<div class="scrollable" >
+ <div class="scrollable-content section content" style="" >
+   <div class="row">
+	   <div class="form-group" class="col-sm-12 col-xs-12">
+		   <div class="page-header1">
+			   <h1>移动技术框架</h1>
+		  </div>
+	   </div>
+  </div>
+  <form class="form-inline" role="form" ng-submit='loginCheck()'>
+  <div class="row">
+	   <div class="form-group" class="col-sm-12 col-xs-12">
+	      <label for="firstname" class="col-sm-5 col-xs-5 control-label cancelPaddingAndMagging fontStyle">
+	         <!-- <font color="red">{{errorInfo}}</font> -->
+	      </label>
+	   </div>
+   </div>
+  <div class="row">
+	   <div class="form-group has-help" class="col-sm-12 col-xs-12">
+	      <label for="firstname" class="col-sm-2 col-xs-2 control-label cancelPaddingAndMagging fontStyle" style="padding-top:5px;">用户名:</label>
+	      <div class="col-sm-10 col-xs-10">
+	         <input type="text" class="col-sm-10 col-xs-10 form-control input-lg" ng-model="username" placeholder="请输入用户名" ng-click="errorInfo=''">
+				<!-- <span ng-show="!hasUsername" class="help-block">请输入用户名</span> -->
+	      </div>
+	   </div>
+   </div>
+   <div class="row">
+	   <div class="form-group has-help" class="col-sm-12 col-xs-12">
+	      <label for="lastname" class="col-sm-2 col-xs-2 control-label cancelPaddingAndMagging fontStyle" style="padding-top:5px;">密　码:</label>
+	      <div class="col-sm-10 col-xs-10">
+	         <input type="password" class="col-sm-10 col-xs-10 form-control input-lg" ng-model="password" placeholder="请输入密码"  ng-click="errorInfo=''">
+	            <!-- <span ng-show="!hasPassword" class="help-block">请输入密码</span> -->
+	      </div>
+	   </div>
+   </div>
+   
+   
+   <div class="row">
+	   <div class="form-group">
+	   	<div class="col-sm-12 col-xs-12">
+		   <label class="col-sm-5 col-xs-5 col-xs-offset-2 col-sm-offset-2">
+		      <!-- <div class="checkboxFive"> -->
+  	        	 <input type="checkbox" style="margin-top:4px;" ng-model='rememberMe'> <div style="margin-top: -21px;margin-left: 21px;font-size: initial;"><font style="font-weight: bold;font-size: 14px;padding-left: 8px;">请记住我</font></div>
+	  	      <!--  <label for="checkboxFiveInput"></label> -->
+		   </label>
+		   
+		   <label class="col-sm-4 col-xs-4 ">
+		      <a href="" ui-turn-on="loginModal" >
+		         <input type="button"  value="设置" >
+		      </a>
+		   </label>
+		   </div>
+	   </div>
+   </div>
+   <div class="row">
+	   <div class="form-group">
+	      <div class="col-sm-12 col-xs-12">
+	         <button type="submit" class="col-sm-12 col-xs-12 btn-lg btn btn-primary">登录</button>
+	      </div>
+	   </div>
+	</div>
+</form>
+ </div>
+</div>
+<div ng-include="'base/home/view/login/setURL.html'"></div>
